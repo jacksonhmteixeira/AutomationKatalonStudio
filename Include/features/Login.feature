@@ -13,12 +13,7 @@ Funcionalidade: Verificando Tela de Login
 
     Exemplos: 
       | email 						| senha  	|
-      | "teste@gmail.com" | 123 |
+      | teste@gmail.com | "tzH6RvlfSTg=" |
       
-   @LoginInvalido
-   Cenario: Validando Usuario Inexistente
-   	Dado que o usuario esta na tela de Login
-   	Quando preencher dado invalido no campo email
-   	E clicar na opcao entrar
-   	Entao o sistema apresenta a mensagem
+ 
    	

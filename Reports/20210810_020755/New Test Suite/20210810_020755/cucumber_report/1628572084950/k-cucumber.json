@@ -1,0 +1,118 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "af2be4e9-dbc4-43c0-b8fe-32ad6fbe25d8",
+        "line": 16,
+        "name": "Realizando Login",
+        "description": "",
+        "id": "verificando-tela-de-login;realizando-login;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5477529400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que o usuario esta na tela de Login",
+            "match": {
+              "location": "Login.queUsuarioEstaNaTelaDeLogin()"
+            },
+            "keyword": "Dado ",
+            "BDD_STEP_UUID": "9241593f-3d52-4df1-bebf-1c90512fb9c5"
+          },
+          {
+            "result": {
+              "duration": 1144955400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencher o campo email com teste@gmail.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "Login.preencherCampoEmail(String)"
+            },
+            "keyword": "Quando ",
+            "BDD_STEP_UUID": "c77c0786-319d-4410-8570-d1d0fc02b801"
+          },
+          {
+            "result": {
+              "duration": 616015500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preencher o campo senha com \"tzH6RvlfSTg\u003d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tzH6RvlfSTg\u003d\"",
+                  "offset": 28
+                }
+              ],
+              "location": "Login.preencherCampoSenha(String)"
+            },
+            "keyword": "E ",
+            "BDD_STEP_UUID": "524667ad-b80c-4f14-9fd6-cd7bfa41eebe"
+          },
+          {
+            "result": {
+              "duration": 1396979000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicar na opcao entrar",
+            "match": {
+              "location": "Login.clicarNaOpcaoEntrar()"
+            },
+            "keyword": "E ",
+            "BDD_STEP_UUID": "bacc566b-9ee2-4ca0-8994-975493b6844a"
+          },
+          {
+            "result": {
+              "duration": 2976800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "o sistema apresenta a tela inicial",
+            "match": {
+              "location": "Login.oSistemaApresentaATelaInicial()"
+            },
+            "keyword": "Entao ",
+            "BDD_STEP_UUID": "8963d0fc-bfe3-4402-ab87-baf84d6e03d8"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@LoginValido"
+          }
+        ]
+      }
+    ],
+    "name": "Verificando Tela de Login",
+    "description": "",
+    "id": "verificando-tela-de-login",
+    "keyword": "Funcionalidade",
+    "uri": "C:/Users/jackson.teixeira/git/NextStarAutomationKatalon/Include/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

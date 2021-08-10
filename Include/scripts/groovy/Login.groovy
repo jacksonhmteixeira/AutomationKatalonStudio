@@ -44,19 +44,26 @@ import cucumber.api.java.pt.Quando
 class Login {
 
 	@Dado("que o usuario esta na tela de Login")
-	def queUsuarioEstaNaTelaDeLogin(String name) {
+	def queUsuarioEstaNaTelaDeLogin() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('http://localhost:4200/#/login')
+		WebUI.takeScreenshot()
 	}
 
 	@Quando("preencher o campo email com (.*)")
 	def preencherCampoEmail(String email) {
+		WebUI.setText(findTestObject('Login/inputLoginEmail'), email)
 	}
 
 	@E("preencher o campo senha com (.*)")
 	def preencherCampoSenha(String senha) {
+		WebUI.setEncryptedText(findTestObject('Login/inputLoginSenha'), senha)
 	}
 
 	@E("clicar na opcao entrar")
 	def clicarNaOpcaoEntrar() {
+		WebUI.click(findTestObject('Login/buttonEntrar'))
+		WebUI.closeBrowser()
 	}
 
 	@Entao("o sistema apresenta a tela inicial")
