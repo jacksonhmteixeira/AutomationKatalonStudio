@@ -77,4 +77,17 @@ class Login {
 	@Entao("o sistema apresenta a mensagem")
 	def oSistemaApresentaMensagem() {
 	}
+
+	@Quando("preencher dados invalidos no campo (.*)")
+	def preencherDadosInvalidosNoCampoEmail() {
+	}
+
+	@E("preencher o campo (.*) dados invalidos")
+	def preencherCampoSenhaComDadosInvalidos() {
+	}
+	
+	@Entao("o sistema apresenta a mensagem de dados invalidos")
+	def oSistemaApresentaAMensagemDeDadosInvalidos(){
+		
+	}
 }
